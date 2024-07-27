@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eba04bbb24b3180d2a6614993a886c4b",
+    "content-hash": "92a338a77fde65a0ce7f92a15c4c42f8",
     "packages": [
         {
             "name": "brick/math",
@@ -576,6 +576,73 @@
                 }
             ],
             "time": "2023-10-12T05:21:21+00:00"
+        },
+        {
+            "name": "geoslim/blinqpay",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Geoslim/blinqpay.git",
+                "reference": "c98b066ecf078ae6d8db215a87e5f5c5396e2d3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Geoslim/blinqpay/zipball/c98b066ecf078ae6d8db215a87e5f5c5396e2d3d",
+                "reference": "c98b066ecf078ae6d8db215a87e5f5c5396e2d3d",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.8.1",
+                "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^8.0|^9.0|^10.0"
+            },
+            "default-branch": true,
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Geoslim\\Blinqpay\\Providers\\BlinqpayServiceProvider"
+                    ],
+                    "aliases": {
+                        "Blinqpay": "Geoslim\\Blinqpay\\Facades\\Blinqpay"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Geoslim\\Blinqpay\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Geoslim\\Blinqpay\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ikponmwosa George Edomwande",
+                    "email": "iedomwande@yahoo.com",
+                    "homepage": "https://github.com/Geoslim",
+                    "role": "Developer"
+                }
+            ],
+            "description": "smart routing system for payment gateways in Laravel.",
+            "keywords": [
+                "framework",
+                "laravel"
+            ],
+            "support": {
+                "source": "https://github.com/Geoslim/blinqpay/tree/main",
+                "issues": "https://github.com/Geoslim/blinqpay/issues"
+            },
+            "time": "2024-07-27T09:59:52+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -7885,7 +7952,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "geoslim/blinqpay": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
