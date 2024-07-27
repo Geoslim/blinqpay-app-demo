@@ -29,6 +29,9 @@ return [
 
     'processors' => [
         // Add payment processor adapters as needed
+        'fincra' => \App\Services\FincraAdapter::class,
+        'payoneer' => \App\Services\PayoneerAdapter::class,
+        'paystack' => \App\Services\PaystackAdapter::class
     ],
 
     /*
